@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get('/')
 async def init():
-  return 'api funcionando'
+  return FileResponse("vota_ai!.png")
 
 @app.get('/{candidato}')
 async def main(candidato):
